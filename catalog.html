@@ -43,7 +43,41 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-      <!-- Здесь будет фильтр с формой -->
+
+      <div class="filter">
+        <span>Фильтр:</span>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <div class="line">
+              <span class="filled-line"></span>
+            </div>
+            <button type="button" class="left-btn">Левый ползунок</button>
+            <button type="button" class="right-btn">Правый ползунок</button>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" name="black" id="black" checked>
+            <label for="black">Черный</label>
+            <input type="checkbox" name="white" id="white">
+            <label for="white">Белый</label>
+            <input type="checkbox" name="blue" id="blue" checked>
+            <label for="blue">Синий</label>
+            <input type="checkbox" name="red" id="red" checked>
+            <label for="red">Красный</label>
+            <input type="checkbox" name="pink" id="pink">
+            <label for="pink">Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes">
+            <label for="bluetooth-yes">Есть</label>
+            <input type="radio" name="bluetooth" value="no" id="bluetooth-no">
+            <label for="bluetooth-no">Нет</label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </div>
 
       <div class="sort">
         <span>Сортировка:</span>
