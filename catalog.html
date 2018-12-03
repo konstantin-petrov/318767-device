@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a href="index.html" class="logo">Device</a>
-      <form action="https://echo.htmlacademy.ru" method="POST">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
         <label for="search" class="visually-hidden">Поиск по сайту</label>
         <input type="search" name="search" placeholder="Поиск по сайту" id="search">
         <button type="submit">Найти</button>
@@ -37,7 +39,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="inner-page-main">
       <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
@@ -46,7 +48,7 @@
       </ul>
 
       <div class="filter">
-        <span>Фильтр:</span>
+        <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
             <legend>Стоимость</legend>
@@ -55,10 +57,12 @@
             </div>
             <button type="button" class="left-btn"><span class="visually-hidden">Левый ползунок</span></button>
             <button type="button" class="right-btn"><span class="visually-hidden">Правый ползунок</span></button>
+            <span class="price-from">от 0</span>
+            <span class="price-to">до 5000</span>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="colors-list">
               <li>
                 <input type="checkbox" name="black" id="black" checked>
                 <label for="black">Черный</label>
@@ -83,7 +87,7 @@
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="bluetooth-list">
               <li>
                 <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
                 <label for="bluetooth-yes">Есть</label>
@@ -99,13 +103,13 @@
       </div>
 
       <div class="sort">
-        <span>Сортировка:</span>
-        <ul>
+        <h2>Сортировка:</h2>
+        <ul class="sort-list">
           <li><a class="by-price" href="#">По цене</a></li>
           <li><a class="by-type" href="#">По типу</a></li>
           <li><a class="by-popular" href="#">По популярности</a></li>
         </ul>
-        <ul>
+        <ul class="up-and-down">
           <li><a class="up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
           <li><a class="down" href="#"><span class="visually-hidden">По убыванию</span></a></li>
         </ul>
