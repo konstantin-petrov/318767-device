@@ -97,7 +97,7 @@ a {
   outline: none;
 }
 
-.search-form   {
+.search-form button[type=submit] {
   display: none;
 }
 
