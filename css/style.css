@@ -471,7 +471,6 @@ a {
 
 .breadcrumbs {
   list-style: none;
-  opacity: 0.3;
   color: #000000;
   font-size: 14px;
   line-height: 24px;
@@ -479,6 +478,11 @@ a {
 }
 .breadcrumbs a {
   color: #000000;
+  opacity: 0.3;
+}
+
+.breadcrumbs-current {
+  opacity: 0.3;
 }
 
 .breadcrumbs a:hover {
@@ -568,6 +572,7 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  opacity: 0.3;
 }
 
 .sort-list a:hover {
@@ -579,8 +584,8 @@ a {
   opacity: 1;
 }
 
-.sort-list li:not(:first-child) {
-  opacity: 0.3;
+.sort-list .by-price {
+  opacity: 1;
 }
 
 .up-and-down li {
