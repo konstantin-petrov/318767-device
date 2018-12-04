@@ -74,7 +74,8 @@ a {
   opacity: 0.6;
 }
 
-.main-header .logo:active {
+.main-header .logo:active,
+.main-header .logo:focus {
   opacity: 0.3;
 }
 
@@ -111,7 +112,8 @@ a {
   opacity: 0.6;
 }
 
-.header-user-navigation a:active {
+.header-user-navigation a:active,
+.header-user-navigation a:focus {
   opacity: 0.3;
 }
 
@@ -136,7 +138,8 @@ a {
   opacity: 0.6;
 }
 
-.main-catalog a:active {
+.main-catalog a:active,
+.main-catalog a:focus {
   opacity: 0.3;
 }
 
@@ -193,7 +196,8 @@ a {
 
 }
 
-.slide a:active {
+.slide a:active,
+.slide a:focus {
   opacity: 0.3;
 }
 
@@ -238,7 +242,8 @@ a {
 
 }
 
-.category-list a:active {
+.category-list a:active,
+.category-list a:focus {
   opacity: 0.3;
 }
 
@@ -262,7 +267,8 @@ a {
 
 }
 
-.services-btn li:active {
+.services-btn li:active,
+.services-btn li:focus {
   color: #f7e184;
 }
 
@@ -322,7 +328,8 @@ a {
 
 }
 
-.about-us-btn:active {
+.about-us-btn:active,
+.about-us-btn:focus {
   opacity: 0.3;
 }
 
@@ -351,7 +358,8 @@ a {
 
 }
 
-.contacts-btn:active {
+.contacts-btn:active,
+.contacts-btn:focus {
   opacity: 0.3;
 }
 
@@ -374,7 +382,8 @@ a {
   opacity: 0.6;
 }
 
-.footer-logo:active {
+.footer-logo:active,
+.footer-logo:focus {
   opacity: 0.3;
 }
 
@@ -394,7 +403,8 @@ a {
   opacity: 1;
 }
 
-.footer-user-navigation a:active {
+.footer-user-navigation a:active,
+.footer-user-navigation a:focus {
   opacity: 0.3;
 }
 
@@ -416,7 +426,8 @@ a {
   opacity: 0.6;
 }
 
-.footer-links a:active {
+.footer-links a:active,
+.footer-links a:focus {
   opacity: 0.3;
 }
 
@@ -436,7 +447,8 @@ a {
   opacity: 0.6;
 }
 
-.htmlacademy-logo:active {
+.htmlacademy-logo:active,
+.htmlacademy-logo:focus {
   opacity: 0.3;
 }
 
@@ -473,7 +485,8 @@ a {
   opacity: 0.6;
 }
 
-.breadcrumbs a:active {
+.breadcrumbs a:active,
+.breadcrumbs a:focus {
   opacity: 0.1;
 }
 
@@ -561,7 +574,8 @@ a {
   opacity: 0.6;
 }
 
-.sort-list a:active{
+.sort-list a:active,
+.sort-list a:focus {
   opacity: 1;
 }
 
@@ -623,7 +637,9 @@ a {
 }
 
 .prev:active,
-.next:active {
+.next:active,
+.prev:focus,
+.next:focus {
   background-color: #d8d8d8;
   opacity: 0.3;
 }
