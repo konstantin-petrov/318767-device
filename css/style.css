@@ -10,7 +10,7 @@
   font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
        url("../fonts/gilroyextrabold.woff") format("woff");
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -64,7 +64,7 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.26px;
@@ -126,7 +126,7 @@ a {
 .main-catalog a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -161,7 +161,7 @@ a {
   color: #ffffff;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 179px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 179.2px;
   letter-spacing: 0.36px;
 }
@@ -170,7 +170,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 56px;
   letter-spacing: 0.17px;
 }
@@ -183,7 +183,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -228,7 +228,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
@@ -251,7 +251,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -273,7 +273,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
 }
@@ -294,7 +294,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
 }
@@ -303,7 +303,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
 }
 
@@ -311,7 +311,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -331,7 +331,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.21px;
 }
@@ -340,7 +340,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -364,7 +364,7 @@ a {
   color: #ffc600;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.48px;
 }
@@ -405,7 +405,7 @@ a {
   color: #ffffff;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -451,7 +451,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.17px;
 }
@@ -482,7 +482,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
@@ -492,7 +492,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
@@ -526,7 +526,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2.15px;
   border: 0;
@@ -539,7 +539,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
@@ -582,7 +582,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
@@ -610,7 +610,7 @@ a {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
