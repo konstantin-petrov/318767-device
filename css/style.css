@@ -69,7 +69,7 @@ img {
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.5px;
 }
 
 .animate-btn::before {
@@ -94,7 +94,7 @@ img {
   opacity: 0.3;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -121,6 +121,7 @@ img {
 
 .logo-wrapper {
   margin-top: -24px;
+  margin-left: -3px;
   margin-bottom: 8px;
 }
 
@@ -131,7 +132,7 @@ img {
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.26px;
+  letter-spacing: 0.5px;
 }
 
 .main-header .logo:hover {
@@ -141,6 +142,20 @@ img {
 .main-header .logo:active,
 .main-header .logo:focus {
   opacity: 0.3;
+}
+
+.logo.not-active:hover,
+.logo.not-active:active,
+.logo.not-active:focus {
+  opacity: 1;
+  cursor: default;
+}
+
+.footer-user-navigation .footer-logo.not-active:hover,
+.footer-user-navigation .footer-logo.not-active:active,
+.footer-user-navigation .footer-logo.not-active:focus {
+  opacity: 1;
+  cursor: default;
 }
 
 
@@ -180,7 +195,7 @@ img {
 .search-form::before {
     position: absolute;
     top: 18px;
-    left: 4px;
+    left: 3px;
     content: "";
     background-image: url(../img/search.svg);
     width: 16px;
@@ -200,7 +215,7 @@ img {
 .search-form button[type=submit] {
   display: none;
   width: 85px;
-  height: 49px;
+  height: 48px;
   padding: 5px;
   border: 2px solid #000000;
   background-color: transparent;
@@ -272,7 +287,7 @@ img {
   background-image: url(../img/user.svg);
   width: 13px;
   height: 12px;
-  margin-right: 12px;
+  margin-right: 11px;
 }
 
 .compare a::before {
@@ -281,7 +296,7 @@ img {
   background-image: url(../img/compare.svg);
   width: 10px;
   height: 10px;
-  margin-right: 12px;
+  margin-right: 11px;
 }
 
 .basket a::before {
@@ -290,7 +305,7 @@ img {
   background-image: url(../img/cart.svg);
   width: 12px;
   height: 12px;
-  margin-right: 12px;
+  margin-right: 11px;
 }
 
 .header-user-menu .logout {
@@ -316,6 +331,10 @@ img {
   letter-spacing: 3.6px;
 }
 
+.main-catalog > li:last-child {
+  margin-right: -5px;
+}
+
 .main-catalog a:hover {
   opacity: 0.6;
 }
@@ -334,13 +353,14 @@ img {
 
 .main-catalog-dropdown-href::after {
   content: "";
+  position: absolute;
   background: url(../img/plus.svg) no-repeat;
   width: 16px;
   height: 16px;
-  display: inline-block;
-  margin-left: 16px;
-  vertical-align: middle;
+  top: 7px;
+  right: -28px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 /* .dropdown-list {
@@ -401,7 +421,7 @@ img {
 }
 
 .header-user-menu .login {
-  margin-right: 215px;
+  margin-right: 219px;
 }
 
 .header-user-menu .compare {
@@ -409,7 +429,7 @@ img {
 }
 
 .main-catalog > li:first-child {
-  margin-right: 286px;
+  margin-right: 322px;
 }
 
 .main-catalog > li:nth-child(2) {
@@ -429,7 +449,7 @@ img {
   margin: 0 auto;
   display: flex;
   margin-top: -110px;
-  margin-bottom: 97px;
+  margin-bottom: 96px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -453,13 +473,13 @@ img {
   height: 7px;
   background-color: #ffffff;
   top: 36px;
-  left: 21px;
+  left: 20px;
 }
 
 .slider-number {
   position: absolute;
-  top: -15px;
-  right: 47px;
+  top: -16px;
+  right: 48px;
 
   color: #ffffff;
   font-family: "Gilroy", Arial, sans-serif;
@@ -478,18 +498,19 @@ img {
   font-size: 47px;
   font-weight: 800;
   line-height: 56px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.7px;
 }
 
 .slider-info-container p {
-  width: 481px;
+  width: 484px;
   margin-bottom: 48px;
 
-  letter-spacing: 0.15px;
+  letter-spacing: 0.2px;
 }
 
 .slider-info-container a {
   min-width: 220px;
+  padding-left: 9px;
 }
 
 
@@ -513,7 +534,8 @@ img {
   line-height: 20px;
   letter-spacing: 0.13px;
   text-align: left;
-  padding-right: 75px;
+  padding-right: 76px;
+  padding-top: 4px;
 }
 
 .slide:not(:nth-child(1)) {
@@ -529,7 +551,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  margin-bottom: 172px;
+  margin-bottom: 181px;
 }
 
 .category-items ul {
@@ -549,6 +571,7 @@ img {
 }
 
 .category-list a {
+  display: block;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -562,7 +585,7 @@ img {
   display: block;
   width: 160px;
   height: 160px;
-  margin-bottom: 29px;
+  margin-bottom: 33px;
 
   background-color: rgba(240, 197, 46, 0.5);
   background-repeat: no-repeat;
@@ -639,25 +662,28 @@ img {
   margin-top: -20px;
 }
 
+.services-buttons-list li {
+  margin-bottom: 31px;
+}
+
 .services-buttons-list::after {
   content: "";
   position: absolute;
   width: 7px;
   height: 319px;
   top: -100px;
-  left: 298px;
+  left: 297px;
   background-color: #000000;
 }
 
 .services-buttons {
   width: 160px;
-  margin-bottom: 30px;
   border: 0;
   background: transparent;
 }
 
 .services-buttons.active {
-  width: 285px;
+  width: 284px;
   height: 40px;
   color: #f7e184;
   background-color: #000000;
@@ -666,9 +692,9 @@ img {
   font-weight: 800;
   line-height: 24px;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 20px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 3.5px;
 }
 
 .services-info {
@@ -695,11 +721,11 @@ img {
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 1px;
 }
 
 .services-slider p {
-  letter-spacing: 0.15px;
+  letter-spacing: 0.2px;
 }
 
 
@@ -797,6 +823,16 @@ img {
   line-height: 40px;
 }
 
+.transport-companies li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;;
+  border-radius: 50%;
+  margin-right: 28px;
+}
+
 .contacts {
   margin-left: 124px;
 }
@@ -873,13 +909,12 @@ img {
 }
 
 .footer-user-navigation a {
-  opacity: 0.7;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 0.15px;
 }
 
 .footer-user-navigation a:hover {
-  opacity: 1;
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-user-navigation a:active,
@@ -894,6 +929,27 @@ img {
 .footer-user-navigation li:not(:first-child) {
   margin-left: 40px;
 }
+
+
+.login-footer a::before {
+  background-image: url(../img/user-footer.svg);
+}
+
+.compare-footer a::before {
+  background-image: url(../img/compare-footer.svg);
+}
+
+.basket-footer a::before {
+  background-image: url(../img/cart-footer.svg);
+}
+
+
+.login-footer a:hover::before,
+.compare-footer a:hover::before,
+.basket-footer a:hover::before {
+  opacity: 0.6;
+}
+
 
 
 
