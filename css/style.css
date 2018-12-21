@@ -592,28 +592,28 @@ img {
   background-position: center;
 }
 
-.category-list li:nth-child(1) a::before {
+.category-item:nth-child(1) a::before {
   background-image: url(../img/popular-1.svg);
 }
 
-.category-list li:nth-child(2) a::before {
+.category-item:nth-child(2) a::before {
   background-image: url(../img/popular-2.svg);
   background-position: center 40px;
 }
 
-.category-list li:nth-child(3) a::before {
+.category-item:nth-child(3) a::before {
   background-image: url(../img/popular-3.svg);
 }
 
-.category-list li:nth-child(4) a::before {
+.category-item:nth-child(4) a::before {
   background-image: url(../img/popular-4.svg);
 }
 
-.category-list li:nth-child(5) a::before {
+.category-item:nth-child(5) a::before {
   background-image: url(../img/popular-5.svg);
 }
 
-.category-list li:nth-child(6) a::before {
+.category-item:nth-child(6) a::before {
   background-image: url(../img/popular-6.svg);
 }
 
