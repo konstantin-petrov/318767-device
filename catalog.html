@@ -56,7 +56,7 @@
 
       <div class="background-wrapper-first">
         <div class="container">
-          <h2>Фильтр:</h2>
+          <h2 class="filter-headline">Фильтр:</h2>
           <div class="sort">
             <h2>Сортировка:</h2>
             <ul class="sort-list">
@@ -65,8 +65,8 @@
               <li><a class="by-popular" href="#">По популярности</a></li>
             </ul>
             <ul class="up-and-down">
-              <li><a class="up" href="#"><span class="">up</span></a></li>
-              <li><a class="down" href="#"><span class="">dw</span></a></li>
+              <li><a class="up" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              <li><a class="down" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
             </ul>
           </div>
         </div>
@@ -135,41 +135,50 @@
               <li>
                 <article class="catalog-item">
                 <img src="img/catalog-items/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
-                <a href="#" class="item-name">Любительская селфи-палка</a>
-                <span class="item-price">500 руб.</span>
+                <div class="flex-wrap">
+                  <a href="#" class="item-name">Любительская селфи-палка</a>
+                  <span class="item-price">500 руб.</span>
+                </div>
                 </article>
               </li>
               <li>
                 <article class="catalog-item">
                 <img src="img/catalog-items/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-                <a href="#" class="item-name">Профессиональная селфи-палка</a>
-                <span class="item-price">1 500 руб.</span>
+                <div class="flex-wrap">
+                  <!-- не знаю как тут сделать без br, не хочется вводить доп класс только для этой карточки. Если делаю ширину меньше, то на первой карточке переносится текст -->
+                  <a href="#" class="item-name">Профессиональная <br> селфи-палка</a>
+                  <span class="item-price">1 500 руб.</span>
+                </div>
                 </article>
               </li>
               <li>
                 <article class="catalog-item">
                 <img src="img/catalog-items/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-                <a href="#" class="item-name">Непотопляемая селфи-палка</a>
-                <span class="item-price">2 500 руб.</span>
+                <div class="flex-wrap">
+                  <a href="#" class="item-name">Непотопляемая селфи-палка</a>
+                  <span class="item-price">2 500 руб.</span>
+                </div>
                 </article>
               </li>
               <li>
                 <article class="catalog-item">
                 <img src="img/catalog-items/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                <a href="#" class="item-name">Селфи-палка «Следуй за мной»</a>
-                <span class="item-price">4 900 руб.</span>
+                <div class="flex-wrap">
+                  <a href="#" class="item-name">Селфи-палка «Следуй за мной»</a>
+                  <span class="item-price">4 900 руб.</span>
+                </div>
                 </article>
               </li>
               </ul>
 
               <div class="pagination">
-                <ul>
-                <li class="prev"><a href="#">Назад</a></li>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li class="next"><a href="#">Вперед</a></li>
+                <a class="prev" href="#">Назад</a>
+                <ul class="pagination-pages">
+                  <li><a>1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
                 </ul>
+                <a class="next" href="#">Вперед</a>
               </div>
 
 
@@ -187,10 +196,10 @@
       <div class="footer-container">
         <ul class="footer-user-navigation">
           <li><a href="index.html" class="footer-logo">Device</a></li>
-          <li class="user-name"><a href="#">Валентин Петухов</a></li>
-          <li class="logout"><a href="#">Выйти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li class="user-name footer-user-name"><a href="#">Валентин Петухов</a></li>
+          <li class="logout footer-logout"><a href="#">Выйти</a></li>
+          <li class="compare compare-footer"><a href="#">Сравнить</a></li>
+          <li class="basket basket-footer"><a href="#">Корзина</a></li>
         </ul>
         <div class="footer-second-row">
           <p class="footer-address">г. Москва, ул. Строителей, 15</p>

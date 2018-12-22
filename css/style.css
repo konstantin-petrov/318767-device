@@ -913,7 +913,7 @@ img {
   letter-spacing: 0.15px;
 }
 
-.footer-user-navigation a:hover {
+.footer-user-navigation a:hover:not(.footer-logo) {
   color: rgba(255, 255, 255, 1);
 }
 
@@ -1113,15 +1113,34 @@ img {
   margin: 0 auto;
 }
 
+.user-name a::before {
+  display: inline-block;
+  content: "";
+  background-image: url(../img/user.svg);
+  width: 13px;
+  height: 12px;
+  margin-right: 11px;
+}
+
+.logout {
+  padding-right: 65px;
+}
+
+.user-name {
+  padding-right: 21px;
+}
+
 .inner-page-main h1 {
   padding-left: 60px;
+  margin-top: 37px;
+  margin-bottom: 23px;
 
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.6px;
 }
 
 .breadcrumbs {
@@ -1129,7 +1148,7 @@ img {
   margin: 0;
   padding: 0;
   padding-left: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 
   list-style: none;
   color: #000000;
@@ -1139,7 +1158,18 @@ img {
 }
 
 .breadcrumbs li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 37px;
+  position: relative;
+}
+
+.breadcrumbs li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  top: 10px;
+  right: -20px;
+  background-image: url(../img/nav-arrow.svg);
 }
 
 .breadcrumbs a {
@@ -1168,24 +1198,31 @@ img {
 /* ----------------------------- background-wrapper ----------------------------- */
 
 .background-wrapper-first {
-  background-image: linear-gradient(to right, #dcdcdc 35%, #ebebeb 35%);
+  background-image: linear-gradient(to right, #dcdcdc 30%, #ebebeb 30%)
   /*background-image: linear-gradient(to right, #dcdcdc 620px, #ebebeb 620px);*/
 }
 
-.background-wrapper-first h2 {
-  width: 280px;
-  padding-left: 57px;
+.filter-headline {
+  width: 328px;
+  padding-left: 61px;
+  padding-top: 22px;
+  margin: 0;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.5px;
+  align-self: stretch;
+  /*outline: 1px solid green;*/
+  background-color: #dcdcdc;
 }
 
 .background-wrapper-first .container {
   display: flex;
+  align-items: center;
+  min-height: 70px;
 }
 
 
@@ -1193,7 +1230,7 @@ img {
 
 
 .background-wrapper-second {
-  background-image: linear-gradient(to right, #ebebeb 35%, #ffffff 35%);
+  background-image: linear-gradient(to right, #ebebeb 30%, #ffffff 30%);
   /*background-image: linear-gradient(to right, #ebebeb 620px, #ffffff 620px);*/
 }
 
@@ -1216,31 +1253,39 @@ img {
 
 .sort {
   display: flex;
+  width: 832px;
   align-items: center;
+  min-height: 70px;
 
   /*background-color: #ebebeb;*/
 }
 
 .sort h2 {
+  width: auto;
+  padding-left: 73px;
+  margin-right: 51px;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.5px;
+  background-color: #ebebeb;
 }
 
 .sort-list {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-right: 201px;
   /*align-items: center;*/
 
 }
 
 .sort-list li {
   list-style: none;
+  margin-right: 30px;
 }
 
 .sort-list a {
@@ -1275,6 +1320,24 @@ img {
   list-style: none;
 }
 
+.up-and-down .up {
+  display: inline-block;
+  margin-right: 18px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-up-dir.svg);
+  opacity: 0.2;
+}
+
+.up-and-down .down {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+}
+
+
+
 
 
 
@@ -1289,15 +1352,13 @@ img {
 /* ----------------------------- filter ----------------------------- */
 
 .filter {
-  width: 348px;
-
-
-  /*background-color: #ebebeb;*/
+  width: 328px;
+  padding-left: 60px;
+  padding-right: 68px;
+  background-color: #ebebeb;
+  /*outline: 1px solid blue;*/
 }
 
-.filter h2 {
-
-}
 
 .filter legend {
   color: #000000;
@@ -1349,12 +1410,19 @@ img {
 
 
 /* ----------------------------- catalog-items ----------------------------- */
+.catalog-items {
+  width: 832px;
+}
+
 
 .items-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0;
   padding: 0;
+  padding-top: 69px;
+  padding-left: 72px;
 }
 
 .items-list li {
@@ -1365,7 +1433,15 @@ img {
   width: 360px;
 }
 
+.catalog-item .flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 45px;
+}
+
 .catalog-item a {
+  width: 260px;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -1388,36 +1464,37 @@ img {
 /* ----------------------------- pagination ----------------------------- */
 
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 760px;
-  margin: 0 auto;
+  min-height: 70px;
+  margin-top: -11px;
+  margin-left: 72px;
+  margin-bottom: 77px;
   background-color: #ebebeb;
 }
 
 .pagination ul {
   display: flex;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  /*justify-content: space-between;*/
   list-style: none;
-  /*outline: 2px solid red;*/
 }
 
-.pagination .prev {
-  margin-left: 25px;
-  margin-right: auto;
-  /*outline: 2px solid red;*/
+.prev,
+.next {
+  width: 130px;
+  padding: 23px 0;
+  text-align: center;
 }
 
-.pagination .next {
-  margin-left: auto;
-  margin-right: 25px;
-  /*outline: 2px solid red;*/
+.pagination-pages li {
+  margin: 0 13px;
 }
 
-.pagination li:nth-child(3) {
-  margin-left: 30px;
-  margin-right: 30px;
-  /*outline: 2px solid red;*/
-}
+
 
 .pagination a {
   color: #000000;
@@ -1426,7 +1503,7 @@ img {
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.5px;
 }
 
 .prev:hover,
@@ -1453,3 +1530,23 @@ img {
 .logout {
   opacity: 0.3;
 }
+
+.footer-user-name a::before {
+  background-image: url(../img/user-footer.svg);
+}
+
+.footer-user-name a:hover::before {
+  opacity: 0.6;
+}
+
+.footer-user-name {
+  margin: 0;
+  padding: 0;
+  margin-right: -19px;
+}
+
+.footer-logout {
+  margin: 0;
+  padding: 0;
+}
+
