@@ -592,28 +592,28 @@ img {
   background-position: center;
 }
 
-.category-item:nth-child(1) a::before {
+.virtual-reality a::before {
   background-image: url(../img/popular-1.svg);
 }
 
-.category-item:nth-child(2) a::before {
+.monopods a::before {
   background-image: url(../img/popular-2.svg);
   background-position: center 40px;
 }
 
-.category-item:nth-child(3) a::before {
+.action-cameras a::before {
   background-image: url(../img/popular-3.svg);
 }
 
-.category-item:nth-child(4) a::before {
+.fitness-bracelets a::before {
   background-image: url(../img/popular-4.svg);
 }
 
-.category-item:nth-child(5) a::before {
+.smart-watches a::before {
   background-image: url(../img/popular-5.svg);
 }
 
-.category-item:nth-child(6) a::before {
+.quadrocopters a::before {
   background-image: url(../img/popular-6.svg);
 }
 
