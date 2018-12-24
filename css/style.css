@@ -62,6 +62,7 @@ img {
 .animate-btn {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
@@ -233,7 +234,7 @@ img {
 .search-form input[type=search] + button[type=submit]:active,
 .search-form input[type=search]:focus + button[type=submit] {
   display: inline-block;
-  /*vertical-align: middle;*/
+  vertical-align: top;
 }
 
 .search-form button[type=submit]:active,
@@ -284,29 +285,35 @@ img {
 
 .login a::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   background-image: url(../img/user.svg);
   width: 13px;
   height: 12px;
   margin-right: 11px;
+  margin-top: -4px;
 }
 
 .compare a::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   background-image: url(../img/compare.svg);
   width: 10px;
   height: 10px;
   margin-right: 11px;
+  margin-top: -4px;
 }
 
 .basket a::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   background-image: url(../img/cart.svg);
   width: 12px;
   height: 12px;
   margin-right: 11px;
+  margin-top: -4px;
 }
 
 .header-user-menu .logout {
@@ -749,7 +756,7 @@ img {
 
 .brands a {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .brands img:last-child {
@@ -827,6 +834,7 @@ img {
 .transport-companies li::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 8px;
   height: 8px;
   border: 2px solid #e5e5e5;;
@@ -1107,11 +1115,13 @@ img {
 
 .user-name a::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   background-image: url(../img/user.svg);
   width: 13px;
   height: 12px;
   margin-right: 11px;
+  margin-top: -4px;
 }
 
 .logout {
@@ -1314,6 +1324,7 @@ img {
 
 .up-and-down .up {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 18px;
   width: 11px;
   height: 10px;
@@ -1323,6 +1334,7 @@ img {
 
 .up-and-down .down {
   display: inline-block;
+  vertical-align: middle;
   width: 11px;
   height: 10px;
   background-image: url(../img/icon-down-dir.svg);
