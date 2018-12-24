@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
