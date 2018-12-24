@@ -91,24 +91,39 @@
                 <legend>Цвет</legend>
                 <ul class="colors-list">
                   <li>
-                    <input type="checkbox" name="black" id="black" checked>
-                    <label for="black">Черный</label>
+                    <label class="colors-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="black" checked>
+                      <span class="checkbox-indicator"></span>
+                      Черный
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="white" id="white">
-                    <label for="white">Белый</label>
+                    <label class="colors-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="white">
+                      <span class="checkbox-indicator"></span>
+                      Белый
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="blue" id="blue" checked>
-                    <label for="blue">Синий</label>
+                    <label class="colors-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="blue" checked>
+                      <span class="checkbox-indicator"></span>
+                      Синий
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="red" id="red" checked>
-                    <label for="red">Красный</label>
+                    <label class="colors-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="red" checked>
+                      <span class="checkbox-indicator"></span>
+                      Красный
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" name="pink" id="pink">
-                    <label for="pink">Розовый</label>
+                    <label class="colors-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="pink">
+                      <span class="checkbox-indicator"></span>
+                      Розовый
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -117,16 +132,22 @@
                 <legend>Bluetooth</legend>
                 <ul class="bluetooth-list">
                   <li>
-                    <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
-                    <label for="bluetooth-yes">Есть</label>
+                    <label class="bluetooth-radio-button">
+                      <input class="visually-hidden" type="radio" name="bluetooth" value="yes" checked>
+                      <span class="radio-button-indicator"></span>
+                      Есть
+                    </label>
                   </li>
                   <li>
-                    <input type="radio" name="bluetooth" value="no" id="bluetooth-no">
-                    <label for="bluetooth-no">Нет</label>
+                    <label class="bluetooth-radio-button">
+                      <input class="visually-hidden" type="radio" name="bluetooth" value="no">
+                      <span class="radio-button-indicator"></span>
+                      Нет
+                    </label>
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit">Показать</button>
+              <button class="animate-btn filter-btn" type="submit">Показать</button>
             </form>
           </div>
 
@@ -139,6 +160,10 @@
                   <a href="#" class="item-name">Любительская селфи-палка</a>
                   <span class="item-price">500 руб.</span>
                 </div>
+                <div class="hover-elements">
+                  <button class="add-to-cart animate-btn" type="button">В корзину</button>
+                  <button class="add-to-compare" type="button">Добавить к сравнению</button>
+                </div>
                 </article>
               </li>
               <li>
@@ -149,6 +174,10 @@
                   <a href="#" class="item-name">Профессиональная <br> селфи-палка</a>
                   <span class="item-price">1 500 руб.</span>
                 </div>
+                <div class="hover-elements">
+                  <button class="add-to-cart animate-btn" type="button">В корзину</button>
+                  <button class="add-to-compare" type="button">Добавить к сравнению</button>
+                </div>
                 </article>
               </li>
               <li>
@@ -158,14 +187,22 @@
                   <a href="#" class="item-name">Непотопляемая селфи-палка</a>
                   <span class="item-price">2 500 руб.</span>
                 </div>
+                <div class="hover-elements">
+                  <button class="add-to-cart animate-btn" type="button">В корзину</button>
+                  <button class="add-to-compare" type="button">Добавить к сравнению</button>
+                </div>
                 </article>
               </li>
               <li>
-                <article class="catalog-item">
+                <article class="catalog-item new-item">
                 <img src="img/catalog-items/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <div class="flex-wrap">
                   <a href="#" class="item-name">Селфи-палка «Следуй за мной»</a>
                   <span class="item-price">4 900 руб.</span>
+                </div>
+                <div class="hover-elements">
+                  <button class="add-to-cart animate-btn" type="button">В корзину</button>
+                  <button class="add-to-compare" type="button">Добавить к сравнению</button>
                 </div>
                 </article>
               </li>
@@ -174,7 +211,7 @@
               <div class="pagination">
                 <a class="prev" href="#">Назад</a>
                 <ul class="pagination-pages">
-                  <li><a>1</a></li>
+                  <li class="current-page"><a>1</a></li>
                   <li><a href="#">2</a></li>
                   <li><a href="#">3</a></li>
                 </ul>
