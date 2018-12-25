@@ -1340,6 +1340,17 @@ img {
   background-image: url(../img/icon-down-dir.svg);
 }
 
+.up-and-down a:hover {
+  opacity: 0.4;
+}
+
+.up-and-down a:active,
+.up-and-down a:focus {
+  opacity: 1;
+}
+
+
+
 
 
 
@@ -1669,7 +1680,7 @@ img {
 .prev:focus,
 .next:focus {
   background-color: #d8d8d8;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
