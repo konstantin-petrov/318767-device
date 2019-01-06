@@ -647,6 +647,7 @@ img {
 
 .services-slider {
   position: relative;
+  margin-bottom: 94px;
   z-index: 0;
   min-height: 288px;
   background-color: #e5e5e5;
@@ -811,6 +812,10 @@ img {
 
 .index-columns .animate-btn {
   width: 260px;
+}
+
+.about-us {
+  width: 600px;
 }
 
 .about-us p {
@@ -1223,7 +1228,6 @@ img {
 
 .background-wrapper-first .container {
   display: flex;
-  align-items: center;
   min-height: 70px;
 }
 
