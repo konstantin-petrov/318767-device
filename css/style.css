@@ -1757,6 +1757,15 @@ img {
   cursor: pointer;
 }
 
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active,
+.modal-close:focus {
+  opacity: 0.3;
+}
+
 .modal-write-us {
   position: fixed;
   top: 50%;
@@ -1795,7 +1804,8 @@ img {
 }
 
 .modal-write-us input[type="text"],
-.modal-write-us input[type="email"] {
+.modal-write-us input[type="email"],
+.modal-write-us textarea {
   padding: 15px 20px;
   height: 50px;
   background-color: #f2f2f2;
@@ -1803,24 +1813,17 @@ img {
 }
 
 .modal-write-us textarea {
-  padding: 15px 20px;
   margin-bottom: 40px;
   height: 156px;
   resize: none;
-  background-color: #f2f2f2;
-  border: 0;
 }
 
 .modal-write-us button[type="submit"] {
   width: 200px;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 }
-
-
-
-
-
 
 .modal-write-us .name,
 .modal-write-us .email {
@@ -1829,4 +1832,25 @@ img {
 
 .modal-write-us .letter {
   width: 100%;
+}
+
+
+.modal-write-us input[type="text"]:hover,
+.modal-write-us input[type="email"]:hover,
+.modal-write-us textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-write-us input[type="text"]:focus,
+.modal-write-us input[type="email"]:focus,
+.modal-write-us textarea:focus {
+  background-color: #ffffff;
+  outline: 3px solid #f0c52e;
+}
+
+.modal-write-us input[type="text"]:invalid,
+.modal-write-us input[type="email"]:invalid,
+.modal-write-us textarea:invalid {
+  background-color: #f6dada;
+  outline: none;
 }
