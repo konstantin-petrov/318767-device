@@ -1745,12 +1745,12 @@ img {
 
 
 /* ----------------------------- modal ----------------------------- */
-.modal-write-us {
+.modal {
   display: none;
 }
 
-.modal-map {
-  display: none;
+.modal-show {
+  display: block;
 }
 
 
