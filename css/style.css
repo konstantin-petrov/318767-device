@@ -1745,11 +1745,14 @@ img {
 
 
 /* ----------------------------- modal ----------------------------- */
-
-
-.modal {
+.modal-write-us {
   display: none;
 }
+
+.modal-map {
+  display: none;
+}
+
 
 .modal-close {
   position: absolute;
@@ -1861,4 +1864,21 @@ img {
 .modal-write-us textarea:invalid {
   background-color: #f6dada;
   outline: none;
+}
+
+
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 560px;
+  margin-left: -480px;
+  margin-top: -290px;
+
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.modal-map iframe {
+  border: none;
 }
