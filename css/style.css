@@ -575,6 +575,7 @@ img {
 }
 
 .category-list li {
+  position: relative;
   width: 160px;
 }
 
@@ -596,49 +597,56 @@ img {
   margin-bottom: 33px;
 
   background-color: rgba(240, 197, 46, 0.5);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.virtual-reality a::before {
+.category-list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+}
+
+.virtual-reality a::after {
   background-image: url(../img/popular-1.svg);
 }
 
-.monopods a::before {
+.monopods a::after {
   background-image: url(../img/popular-2.svg);
   background-position: center 40px;
 }
 
-.action-cameras a::before {
+.action-cameras a::after {
   background-image: url(../img/popular-3.svg);
 }
 
-.fitness-bracelets a::before {
+.fitness-bracelets a::after {
   background-image: url(../img/popular-4.svg);
 }
 
-.smart-watches a::before {
+.smart-watches a::after {
   background-image: url(../img/popular-5.svg);
 }
 
-.quadrocopters a::before {
+.quadrocopters a::after {
   background-image: url(../img/popular-6.svg);
 }
 
-.category-list li:hover a::before {
-  background-color: #f0c52e;
+.category-list a:hover::before {
+  background-color: rgba(240, 197, 46, 1);
 }
 
-.category-list li:active a::before,
-.category-list li:focus a::before {
+.category-list a:active::after,
+.category-list a:focus::after {
   opacity: 0.3;
 }
-
-
 
 .category-list a:active,
 .category-list a:focus {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
