@@ -1418,14 +1418,72 @@ img {
   letter-spacing: 0.18px;
 }
 
-.filter span {
-  opacity: 0.2;
-  color: #000000;
+.filter-price {
+  position: relative;
+}
+
+.filter-price button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49px;
+    left: -5px;
+}
+
+.filter-price button:last-child {
+  left: 108px;
+}
+
+.filter-price button::before {
+  content: "от 0";
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 300;
   line-height: 24px;
+  font-weight: 300;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+  bottom: -19px;
+  left: -11px;
 }
+
+.filter-price button:last-child::before {
+  content: "до 5000";
+  left: -20px;
+}
+
+.filter-price button::after {
+  content: "";
+  width: 93px;
+  height: 2px;
+  background-color: #91c92f;
+  position: absolute;
+  right: -93px;
+  top: 10px;
+}
+
+.filter-price button:last-child::after {
+  width: 73px;
+  right: -73px;
+  background-color: #dbdbdb;
+}
+
+.filter-price button:active img,
+.filter-price button:focus img {
+    transform: scale(1.1);
+}
+
+.filter-price button:active,
+.filter-price button:focus {
+  outline: none;
+}
+
+
 
 .colors-list {
   margin: 0;
@@ -1477,6 +1535,14 @@ img {
   width: 100%;
   padding-top: 10px;
   margin-bottom: 20px;
+}
+
+.filter-price legend {
+  margin-bottom: 10px;
+}
+
+.filter-price {
+
 }
 
 .colors-checkbox {
