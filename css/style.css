@@ -1154,7 +1154,8 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  align-self: stretch;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
   background-color: #dcdcdc;
 }
 
@@ -1346,7 +1347,8 @@ img {
 
 .filter-price button:active img,
 .filter-price button:focus img {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .filter-price button:active,
