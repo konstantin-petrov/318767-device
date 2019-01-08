@@ -521,10 +521,32 @@ img {
   padding-left: 9px;
 }
 
+.slider-buttons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-buttons li {
+  position: relative;
+  top: -21px;
+  left: 400px;
+  margin-right: 21px;
+  background-image: url(../img/slider-button-empty.svg);
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+}
+
+.slider-buttons li:first-child {
+  background-image: url(../img/slider-button.svg);
+}
+
 
 
 .feautures {
-  margin-top: 52px;
+  margin-top: 40px;
 }
 
 .feautures td {
