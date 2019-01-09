@@ -1508,7 +1508,7 @@ img {
   margin-bottom: 45px;
 }
 
-.catalog-item a {
+.item-name {
   width: 260px;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
@@ -1561,6 +1561,7 @@ img {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.13px;
+  color: #000000;
   opacity: 0.5;
 }
 
