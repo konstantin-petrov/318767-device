@@ -1277,7 +1277,6 @@ img {
   padding-left: 60px;
   padding-right: 68px;
   background-color: #ebebeb;
-  /*outline: 1px solid blue;*/;
 }
 
 .filter legend {
@@ -1345,8 +1344,8 @@ img {
   background-color: #dbdbdb;
 }
 
-.filter-price button:active img,
-.filter-price button:focus img {
+.filter-button:active img,
+.filter-button:focus img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
