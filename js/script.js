@@ -10,6 +10,7 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 
@@ -28,3 +29,20 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
+
+
+var form = popup.querySelector("form");
+var name = popup.querySelector("[name=name]");
+var email = popup.querySelector("[name=email]");
+var letter = popup.querySelector("[name=letter]");
+
+form.addEventListener("submit", function (evt) {
+  if (name.value=="" || email.value=="" || letter.value=="") {
+  evt.preventDefault();
+  popup.classList.remove("modal-error");
+  popup.offsetWidth = popup.offsetWidth;
+  popup.classList.add("modal-error");
+ } else {
+  form.submit();
+ }
+ });
