@@ -59,9 +59,9 @@ img {
 }
 
 .animate-btn {
-  position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding: 10px;
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -70,23 +70,12 @@ img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(240,197,46,1) 40%, rgba(240,197,46,1) 60%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%);
+  cursor: pointer;
 }
 
-.animate-btn::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 100%;
-  height: 8px;
-  background-color: #f0c52e;
-  z-index: -1;
-  transition: all .2s linear;
-}
-
-.animate-btn:hover::before {
-  top: -8px;
-  height: 40px;
+.animate-btn:hover {
+  background-image: linear-gradient(to bottom, #f0c52e 0%, #f0c52e 100%);
 }
 
 .animate-btn:active,
@@ -343,7 +332,7 @@ img {
   width: 16px;
   height: 16px;
   top: 7px;
-  right: -28px;
+  right: -5px;
   opacity: 0.3;
   cursor: pointer;
 }
@@ -398,7 +387,8 @@ img {
 }
 
 .main-catalog > li:first-child {
-  margin-right: 322px;
+  margin-right: 300px;
+  padding-right: 22px;
 }
 
 .main-catalog > li:nth-child(2) {
@@ -672,7 +662,7 @@ img {
 .services-buttons {
   width: 160px;
   border: 0;
-  background: transparent;
+  background-color: transparent;
 }
 
 .services-buttons.active {
@@ -688,6 +678,16 @@ img {
   padding-left: 20px;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+}
+
+.services-buttons:active,
+.services-buttons:focus {
+  color: #f7e184;
+  background-color: #000000;
+  background-image: none;
+  opacity: 1;
+  width: 284px;
+  padding-right: 140px;
 }
 
 .services-info {
