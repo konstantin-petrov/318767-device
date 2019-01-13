@@ -657,7 +657,6 @@ img {
 
 .services-buttons-list li {
   margin-bottom: 31px;
-  position: relative;
 }
 
 .services-buttons-list::after {
@@ -677,6 +676,7 @@ img {
 }
 
 .services-buttons.active {
+  width: 284px;
   height: 40px;
   color: #f7e184;
   background-color: #000000;
@@ -690,27 +690,11 @@ img {
   letter-spacing: 3.5px;
 }
 
-.services-buttons.active::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 160px;
-  width: 120px;
-  height: 40px;
-  background-color: #000000;
-}
-
-.services-buttons:active {
-  background-color: #000000;
-  height: 40px;
-  opacity: 1;
-}
-
 .services-info {
-  padding-left: 241px;
+  padding-left: 117px;
   padding-right: 300px;
   margin-top: -66px;
-  background: url(../img/services/delivery.svg) no-repeat 798px 51px;
+  background: url(../img/services/delivery.svg) no-repeat 674px 50px;
 }
 
 .services-info h2 {
